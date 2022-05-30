@@ -1,0 +1,7 @@
+SELECT customer_id, 
+CASE customer_id
+    WHEN 2 THEN 'winner'
+	WHEN 5 THEN 'Second place'
+	ELSE 'Normal'
+END AS raffel
+FROM customer
